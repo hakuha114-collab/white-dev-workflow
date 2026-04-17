@@ -1,36 +1,42 @@
 # white-dev-workflow
 
-瀹屾暣鐨勮蒋浠跺紑鍙戝伐浣滄祦 Skill锛岀粨鍚?TDD 娴佺▼銆並arpathy 浠ｇ爜瑙勮寖銆佷笁鍏冧唬鐮佸鏍革紝鑷姩鐢熸垚瀹屾暣鐨勯」鐩枃妗ｃ€?
-[English](./README-en.md) | 涓枃
+完整的软件开发工作流 Skill，结合 TDD 流程、Karpathy 代码规范、三元代码审核，自动生成完整的项目文档。
 
-## 鐗规€?
-- 馃殌 **TDD 寮€鍙戞祦绋?* - 娴嬭瘯椹卞姩锛岃鏍煎厛琛?- 馃搻 **Karpathy 浠ｇ爜瑙勮寖** - 绠€娲併€佺簿鍑嗐€佺洰鏍囧鍚?- 馃懃 **涓夊厓浠ｇ爜瀹℃牳** - 缁撴瀯鍖栥€佸缁村害浠ｇ爜璇勫
-- 馃搫 **鑷姩鏂囨。鐢熸垚** - 闇€姹?璁捐/寮€鍙?娴嬭瘯/璇勫鍏ㄨ鐩?- 馃搳 **浣跨敤缁熻杩借釜** - Skill 鍜?Agent 璋冪敤娆℃暟鑷姩璁板綍
+[English](./README-en.md) | 中文
 
-## 宸ヤ綔娴?Pipeline
+## 特性
+
+- 🚀 **TDD 开发流程** - 测试驱动，规格先行
+- 📐 **Karpathy 代码规范** - 简洁、精准、目标导向
+- 👥 **三元代码审核** - 结构化、多维度代码评审
+- 📄 **自动文档生成** - 需求/设计/开发/测试/评审全覆盖
+- 📊 **使用统计追踪** - Skill 和 Agent 调用次数自动记录
+
+## 工作流 Pipeline
 
 ```
-Idea 鈫?Brainstorm 鈫?Plan 鈫?Subagent-Driven Build (TDD) 鈫?Code Review (涓夊厓) 鈫?Doc Generation 鈫?Finish
+Idea → Brainstorm → Plan → Subagent-Driven Build (TDD) → Code Review (三元) → Doc Generation → Finish
 ```
 
-## 蹇€熷紑濮?
+## 快速开始
+
 ```
-鐢?white-dev-workflow 甯垜鍒涘缓涓€涓?xxx 椤圭洰
+用 white-dev-workflow 帮我创建一个 xxx 项目
 ```
 
-## 鏂囨。妯℃澘
+## 文档模板
 
-| 鏂囨。 | 鏂囦欢鍚?| 璇存槑 |
+| 文档 | 文件名 | 说明 |
 |------|--------|------|
-| 闇€姹傛枃妗?| `doc/01-requirements.md` | 鍔熻兘闇€姹傘€侀潪鍔熻兘闇€姹傘€侀獙鏀舵爣鍑?|
-| 璁捐鏂囨。 | `doc/02-design.md` | 鏋舵瀯璁捐銆丄PI 璁捐銆佹暟鎹ā鍨?|
-| 浠诲姟璁″垝 | `doc/03-tasks.md` | 鍒嗕换鍔″疄鐜拌鍒?|
-| 寮€鍙戣褰?| `doc/04-dev-log.md` | 寮€鍙戣繃绋嬫棩蹇?|
-| 娴嬭瘯鐢ㄤ緥 | `doc/05-test-cases.md` | 鍗曞厓娴嬭瘯銆侀泦鎴愭祴璇曠敤渚?|
-| 浠ｇ爜璇勫 | `doc/06-code-review.md` | 涓夊厓瀹℃牳鎶ュ憡 |
-| 浣跨敤缁熻 | `doc/skill_agent_usage.md` | Skill/Agent 璋冪敤缁熻 |
+| 需求文档 | `doc/01-requirements.md` | 功能需求、非功能需求、验收标准 |
+| 设计文档 | `doc/02-design.md` | 架构设计、API 设计、数据模型 |
+| 任务计划 | `doc/03-tasks.md` | 分任务实现计划 |
+| 开发记录 | `doc/04-dev-log.md` | 开发过程日志 |
+| 测试用例 | `doc/05-test-cases.md` | 单元测试、集成测试用例 |
+| 代码评审 | `doc/06-code-review.md` | 三元审核报告 |
+| 使用统计 | `doc/skill_agent_usage.md` | Skill/Agent 调用统计 |
 
-## 渚濊禆
+## 依赖
 
 - OpenClaw
 - Subagent (Codex / Claude Code)
